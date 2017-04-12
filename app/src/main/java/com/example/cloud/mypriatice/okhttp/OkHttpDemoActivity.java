@@ -24,7 +24,7 @@ public class OkHttpDemoActivity extends AppCompatActivity {
             @Override
             public void run() {
                 try {
-                    method();
+                    method2();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -45,5 +45,21 @@ public class OkHttpDemoActivity extends AppCompatActivity {
             Log.e("TAG", responseHeaders.name(i) + ": " + responseHeaders.value(i));
         }
         Log.e("TAG", response.body().string());
+    }
+
+    public void method2() throws Exception {
+        Request request = new Request.Builder()
+                .url("https://api.github.com/repos/square/okhttp/issues")
+                .header("User-Agent", "OkHttp Headers.java")
+                .addHeader("Accept", "application/json; q=0.5")
+                .addHeader("Accept", "application/vnd.github.v3+json")
+                .build();
+
+        Response response = okHttpClient.newCall(request).execute();
+        if (!response.isSuccessful()) throw new IOException("Unexpected code " + response);
+
+        System.out.println("Server: " + response.header("Server"));
+        System.out.println("Date: " + response.header("Date"));
+        System.out.println("Vary: " + response.headers("Vary"));
     }
 }

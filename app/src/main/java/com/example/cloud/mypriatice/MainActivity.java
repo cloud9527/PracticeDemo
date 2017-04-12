@@ -3,9 +3,11 @@ package com.example.cloud.mypriatice;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.example.cloud.mypriatice.eventbus.EventBusOneActivity;
 import com.example.cloud.mypriatice.okhttp.OkHttpDemoActivity;
@@ -24,13 +26,15 @@ public class MainActivity extends AppCompatActivity {
     Button button7;
     @BindView(R.id.button8)
     Button button8;
+    @BindView(R.id.textView4)
+    TextView textView4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-//        提交测试
+        textView4.setText(Html.fromHtml(getString(R.string.html_text)));
     }
 
     @OnClick({R.id.button6, R.id.button7, R.id.button8})

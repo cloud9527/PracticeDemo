@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">MyPriatice</string>
+    <string name="html_text" formatted="false">
+
+    <![CDATA[
+    <font color = \'#28B5F1\'>Find</font>
+      and
+      <font color = \'#28B5F1\'>Go</font>
+    back
+]]>
+</string>
 </resources>
