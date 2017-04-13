@@ -10,6 +10,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.cloud.mypriatice.eventbus.EventBusOneActivity;
+import com.example.cloud.mypriatice.mvp.MVPLoginActivity;
 import com.example.cloud.mypriatice.okhttp.OkHttpDemoActivity;
 
 import butterknife.BindView;
@@ -28,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
     Button button8;
     @BindView(R.id.textView4)
     TextView textView4;
+    @BindView(R.id.button9)
+    Button button9;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         textView4.setText(Html.fromHtml(getString(R.string.html_text)));
     }
 
-    @OnClick({R.id.button6, R.id.button7, R.id.button8})
+    @OnClick({R.id.button6, R.id.button7, R.id.button8, R.id.button9})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.button6:
@@ -49,8 +52,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.button8:
                 startActivity(new Intent(this, OkHttpDemoActivity.class));
                 break;
+            case R.id.button9:
+                startActivity(new Intent(this, MVPLoginActivity.class));
+                break;
 
         }
     }
-
 }

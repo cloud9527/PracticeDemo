@@ -32,7 +32,8 @@
         </receiver>
 
         <activity android:name=".customerview.TextSwitcherActivity" />
-        <activity android:name=".okhttp.OkHttpDemoActivity"></activity>
+        <activity android:name=".okhttp.OkHttpDemoActivity" />
+        <activity android:name=".mvp.MVPLoginActivity"></activity>
     </application>
 
 </manifest>
