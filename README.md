@@ -1,3 +1,7 @@
 # PracticeDemo
-personal practice
-个人练习Demo，涉及自定义view,以及主流第三方框架
+personal practice demo
+
+1. customerview
+1. eventbus
+1. mvp
+1. okhttp 
