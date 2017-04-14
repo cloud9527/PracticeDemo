@@ -1,5 +1,6 @@
 package com.example.cloud.mypriatice.mvp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -64,7 +65,8 @@ public class MVPLoginActivity extends AppCompatActivity implements LoginView {
 
     @Override
     public void goToHome() {
-        finish();
+        hideProgress();
+        startActivity(new Intent(this, MVPListViewActivity.class));
     }
 
     @Override

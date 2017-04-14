@@ -33,7 +33,8 @@
 
         <activity android:name=".customerview.TextSwitcherActivity" />
         <activity android:name=".okhttp.OkHttpDemoActivity" />
-        <activity android:name=".mvp.MVPLoginActivity"></activity>
+        <activity android:name=".mvp.MVPLoginActivity" />
+        <activity android:name=".mvp.MVPListViewActivity"></activity>
     </application>
 
 </manifest>
