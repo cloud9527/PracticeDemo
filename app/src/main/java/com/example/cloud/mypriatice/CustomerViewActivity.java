@@ -7,8 +7,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 
+import com.example.cloud.mypriatice.customerview.BezierViewActivity;
 import com.example.cloud.mypriatice.customerview.CircleProgressViewActivity;
 import com.example.cloud.mypriatice.customerview.MyScrollActivity;
+import com.example.cloud.mypriatice.customerview.PieViewActivity;
 import com.example.cloud.mypriatice.customerview.TextSwitcherActivity;
 import com.example.cloud.mypriatice.customerview.TopBarActivity;
 
@@ -30,6 +32,8 @@ public class CustomerViewActivity extends AppCompatActivity {
     Button button5;
     @BindView(R.id.activity_customer_view)
     RelativeLayout activityCustomerView;
+    @BindView(R.id.button6)
+    Button button6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +42,7 @@ public class CustomerViewActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.button, R.id.button2, R.id.button3, R.id.button4, R.id.button5})
+    @OnClick({R.id.button, R.id.button2, R.id.button3, R.id.button4, R.id.button5,R.id.button6})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.button:
@@ -54,6 +58,10 @@ public class CustomerViewActivity extends AppCompatActivity {
                 startActivity(new Intent(this, TextSwitcherActivity.class));
                 break;
             case R.id.button5:
+                startActivity(new Intent(this, PieViewActivity.class));
+                break;
+            case R.id.button6:
+                startActivity(new Intent(this, BezierViewActivity.class));
                 break;
         }
     }

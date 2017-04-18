@@ -7,6 +7,7 @@
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
@@ -34,7 +35,9 @@
         <activity android:name=".customerview.TextSwitcherActivity" />
         <activity android:name=".okhttp.OkHttpDemoActivity" />
         <activity android:name=".mvp.MVPLoginActivity" />
-        <activity android:name=".mvp.MVPListViewActivity"></activity>
+        <activity android:name=".mvp.MVPListViewActivity" />
+        <activity android:name=".customerview.PieViewActivity" />
+        <activity android:name=".customerview.BezierViewActivity"></activity>
     </application>
 
 </manifest>
