@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.example.cloud.mypriatice.customerview.PieViewActivity">
 
-    <com.example.cloud.mypriatice.customerview.BezierView
+    <com.example.cloud.mypriatice.customerview.SecondOrderBezierView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="8dp"

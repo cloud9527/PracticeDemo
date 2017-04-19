@@ -37,7 +37,8 @@
         <activity android:name=".mvp.MVPLoginActivity" />
         <activity android:name=".mvp.MVPListViewActivity" />
         <activity android:name=".customerview.PieViewActivity" />
-        <activity android:name=".customerview.BezierViewActivity"></activity>
+        <activity android:name=".customerview.SecondOrderBezierViewActivity" />
+        <activity android:name=".customerview.ThreeOrderBezierActivity"></activity>
     </application>
 
 </manifest>

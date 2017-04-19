@@ -12,20 +12,20 @@ import android.view.MotionEvent;
 import android.view.View;
 
 /**
+ * 二阶贝塞尔曲线
  * Created by Cloud on 2017/4/18.
  */
-
-public class BezierView extends View {
+public class SecondOrderBezierView extends View {
     private Paint mPaint;
     private int centerX, centerY;
     private PointF start, end, control;
 
-    public BezierView(Context context, @Nullable AttributeSet attrs) {
+    public SecondOrderBezierView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         initData();
     }
 
-    public BezierView(Context context) {
+    public SecondOrderBezierView(Context context) {
         super(context);
         initData();
 }

@@ -14,6 +14,7 @@ import com.example.cloud.mypriatice.customerview.bean.PieData;
 import java.util.ArrayList;
 
 /**
+ * 饼图
  * Created by Cloud on 2017/4/18.
  */
 public class PieView extends View {

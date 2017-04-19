@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 
 /**
+ * 自定义进度条
  * Created by Cloud on 2017/2/8.
  */
 

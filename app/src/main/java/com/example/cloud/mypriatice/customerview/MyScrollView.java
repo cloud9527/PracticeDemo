@@ -11,6 +11,7 @@ import android.view.WindowManager;
 import android.widget.Scroller;
 
 /**
+ * 自定义ScrollView
  * Created by Cloud on 2017/2/9.
  */
 

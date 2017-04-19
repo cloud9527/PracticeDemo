@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import com.example.cloud.mypriatice.R;
 
-public class BezierViewActivity extends AppCompatActivity {
+public class SecondOrderBezierViewActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
