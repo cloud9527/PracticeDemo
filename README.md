@@ -9,6 +9,7 @@ personal practice demo
 	5. PieView  饼图
 	6. SecondOrderBezierView    二阶贝塞尔曲线
 	7. ThreeOderBeizerView  三阶贝塞尔曲线
+	8. RaderView 雷达图
 1. eventbus
 2. okhttp 
 1. mvp

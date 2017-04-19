@@ -5,12 +5,13 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.RelativeLayout;
+import android.widget.LinearLayout;
 
-import com.example.cloud.mypriatice.customerview.SecondOrderBezierViewActivity;
 import com.example.cloud.mypriatice.customerview.CircleProgressViewActivity;
 import com.example.cloud.mypriatice.customerview.MyScrollActivity;
 import com.example.cloud.mypriatice.customerview.PieViewActivity;
+import com.example.cloud.mypriatice.customerview.RaderViewActivity;
+import com.example.cloud.mypriatice.customerview.SecondOrderBezierViewActivity;
 import com.example.cloud.mypriatice.customerview.TextSwitcherActivity;
 import com.example.cloud.mypriatice.customerview.ThreeOrderBezierActivity;
 import com.example.cloud.mypriatice.customerview.TopBarActivity;
@@ -32,11 +33,13 @@ public class CustomerViewActivity extends AppCompatActivity {
     @BindView(R.id.button5)
     Button button5;
     @BindView(R.id.activity_customer_view)
-    RelativeLayout activityCustomerView;
+    LinearLayout activityCustomerView;
     @BindView(R.id.button6)
     Button button6;
     @BindView(R.id.button7)
     Button mButton7;
+    @BindView(R.id.button8)
+    Button mButton8;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +48,8 @@ public class CustomerViewActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.button, R.id.button2, R.id.button3, R.id.button4, R.id.button5, R.id.button6,R.id.button7})
+    @OnClick({R.id.button, R.id.button2, R.id.button3, R.id.button4
+            , R.id.button5, R.id.button6, R.id.button7, R.id.button8})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.button:
@@ -68,6 +72,9 @@ public class CustomerViewActivity extends AppCompatActivity {
                 break;
             case R.id.button7:
                 startActivity(new Intent(this, ThreeOrderBezierActivity.class));
+                break;
+            case R.id.button8:
+                startActivity(new Intent(this, RaderViewActivity.class));
                 break;
         }
     }
