@@ -41,6 +41,8 @@
         <activity android:name=".customerview.ThreeOrderBezierActivity"/>
         <activity android:name=".customerview.RaderViewActivity">
         </activity>
+        <activity android:name=".customerview.SearchViewActivity">
+        </activity>
     </application>
 
 </manifest>

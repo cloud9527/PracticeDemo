@@ -11,6 +11,7 @@ import com.example.cloud.mypriatice.customerview.CircleProgressViewActivity;
 import com.example.cloud.mypriatice.customerview.MyScrollActivity;
 import com.example.cloud.mypriatice.customerview.PieViewActivity;
 import com.example.cloud.mypriatice.customerview.RaderViewActivity;
+import com.example.cloud.mypriatice.customerview.SearchViewActivity;
 import com.example.cloud.mypriatice.customerview.SecondOrderBezierViewActivity;
 import com.example.cloud.mypriatice.customerview.TextSwitcherActivity;
 import com.example.cloud.mypriatice.customerview.ThreeOrderBezierActivity;
@@ -40,6 +41,8 @@ public class CustomerViewActivity extends AppCompatActivity {
     Button mButton7;
     @BindView(R.id.button8)
     Button mButton8;
+    @BindView(R.id.button9)
+    Button mButton9;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,7 +52,8 @@ public class CustomerViewActivity extends AppCompatActivity {
     }
 
     @OnClick({R.id.button, R.id.button2, R.id.button3, R.id.button4
-            , R.id.button5, R.id.button6, R.id.button7, R.id.button8})
+            , R.id.button5, R.id.button6, R.id.button7, R.id.button8
+            , R.id.button9})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.button:
@@ -75,6 +79,9 @@ public class CustomerViewActivity extends AppCompatActivity {
                 break;
             case R.id.button8:
                 startActivity(new Intent(this, RaderViewActivity.class));
+                break;
+            case R.id.button9:
+                startActivity(new Intent(this, SearchViewActivity.class));
                 break;
         }
     }

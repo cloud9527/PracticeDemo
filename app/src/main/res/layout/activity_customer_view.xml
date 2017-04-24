@@ -109,5 +109,17 @@
             android:layout_below="@+id/button7"
             android:layout_marginTop="10dp"
             android:text="RaderView"/>
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/button7"
+            android:layout_marginTop="10dp"
+            android:text="SearchView"/>
     </LinearLayout>
 </ScrollView>
