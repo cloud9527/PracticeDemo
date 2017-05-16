@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
     TextView textView4;
     @BindView(R.id.button9)
     Button button9;
+    @BindView(R.id.button10)
+    Button mButton10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         textView4.setText(Html.fromHtml(getString(R.string.html_text)));
     }
 
-    @OnClick({R.id.button6, R.id.button7, R.id.button8, R.id.button9})
+    @OnClick({R.id.button6, R.id.button7, R.id.button8, R.id.button9, R.id.button10})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.button6:
@@ -54,6 +56,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.button9:
                 startActivity(new Intent(this, MVPLoginActivity.class));
+                break;
+            case R.id.button10:
+                startActivity(new Intent(this, JSHtmlTwoActivity.class));
                 break;
 
         }

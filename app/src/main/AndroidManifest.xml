@@ -43,6 +43,8 @@
         </activity>
         <activity android:name=".customerview.SearchViewActivity">
         </activity>
+        <activity android:name=".JSHtmlActivity"/>
+        <activity android:name=".JSHtmlTwoActivity"/>
     </application>
 
 </manifest>
