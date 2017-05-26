@@ -8,8 +8,7 @@ import dagger.Component;
 /**
  * Created by Cloud on 2017/5/25.
  */
-@ActivityScope
-@Component(modules = ActivityModule.class,dependencies = AppComponent.class)
+@Component(modules = ActivityModule.class)
 public interface ActivityComponent {
     void inject(DaggerActivity daggerActivity);
 }

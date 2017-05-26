@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.cloud.mypriatice.dagger2.DaggerActivity;
+import com.example.cloud.mypriatice.dagger2_test.MyDagger2TestActivity;
 import com.example.cloud.mypriatice.eventbus.EventBusOneActivity;
 import com.example.cloud.mypriatice.mvp.MVPLoginActivity;
 import com.example.cloud.mypriatice.okhttp.OkHttpDemoActivity;
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(this, JSHtmlTwoActivity.class));
                 break;
             case R.id.button11:
-                startActivity(new Intent(this, DaggerActivity.class));
+                startActivity(new Intent(this, MyDagger2TestActivity.class));
                 break;
 
         }

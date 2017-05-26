@@ -30,10 +30,10 @@ public class ActivityModule {
         return activity;
     }
 
-//    @Provides
-//    public User provideUser() {
-//        return new User("user form ActivityModule");
-//    }
+    @Provides
+    public User provideUser() {
+        return new User("user form ActivityModule ActivityModule ActivityModule");
+    }
 
     @Provides
     public DaggerPresenter provideDaggerPresenter(DaggerActivity activity, User user) {
