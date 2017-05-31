@@ -53,6 +53,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:text="Dagger2"/>
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="经典排序算法"/>
 
     <TextView
         android:id="@+id/textView4"

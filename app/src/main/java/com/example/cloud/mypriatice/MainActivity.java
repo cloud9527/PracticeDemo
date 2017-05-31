@@ -8,7 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.cloud.mypriatice.dagger2_test.MyDagger2TestActivity;
+import com.example.cloud.mypriatice.algorithm.AlgorithmActivity;
+import com.example.cloud.mypriatice.dagger2.DaggerActivity;
 import com.example.cloud.mypriatice.eventbus.EventBusOneActivity;
 import com.example.cloud.mypriatice.mvp.MVPLoginActivity;
 import com.example.cloud.mypriatice.okhttp.OkHttpDemoActivity;
@@ -33,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
     Button mButton10;
     @BindView(R.id.button11)
     Button mButton11;
+    @BindView(R.id.button12)
+    Button mButton12;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         textView4.setText(Html.fromHtml(getString(R.string.html_text)));
     }
 
-    @OnClick({R.id.button6, R.id.button7, R.id.button8, R.id.button9, R.id.button10, R.id.button11})
+    @OnClick({R.id.button6, R.id.button7, R.id.button8, R.id.button9, R.id.button10, R.id.button11, R.id.button12})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.button6:
@@ -61,9 +64,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(this, JSHtmlTwoActivity.class));
                 break;
             case R.id.button11:
-                startActivity(new Intent(this, MyDagger2TestActivity.class));
+                startActivity(new Intent(this, DaggerActivity.class));
+                break;
+            case R.id.button12:
+                startActivity(new Intent(this, AlgorithmActivity.class));
                 break;
 
         }
     }
+
 }

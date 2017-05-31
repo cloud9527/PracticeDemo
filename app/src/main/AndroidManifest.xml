@@ -50,6 +50,10 @@
         </activity>
         <activity android:name=".dagger2_test.MyDagger2TestActivity">
         </activity>
+        <activity android:name=".algorithm.AlgorithmActivity">
+        </activity>
+        <activity android:name=".retrofit.RetrofitDemoActivity">
+        </activity>
     </application>
 
 </manifest>
