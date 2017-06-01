@@ -13,6 +13,7 @@ import com.example.cloud.mypriatice.dagger2.DaggerActivity;
 import com.example.cloud.mypriatice.eventbus.EventBusOneActivity;
 import com.example.cloud.mypriatice.mvp.MVPLoginActivity;
 import com.example.cloud.mypriatice.okhttp.OkHttpDemoActivity;
+import com.example.cloud.mypriatice.retrofit.RetrofitDemoActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -36,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
     Button mButton11;
     @BindView(R.id.button12)
     Button mButton12;
+    @BindView(R.id.button13)
+    Button mButton13;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +48,8 @@ public class MainActivity extends AppCompatActivity {
         textView4.setText(Html.fromHtml(getString(R.string.html_text)));
     }
 
-    @OnClick({R.id.button6, R.id.button7, R.id.button8, R.id.button9, R.id.button10, R.id.button11, R.id.button12})
+    @OnClick({R.id.button6, R.id.button7, R.id.button8, R.id.button9
+            , R.id.button10, R.id.button11, R.id.button12, R.id.button13})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.button6:
@@ -68,6 +72,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.button12:
                 startActivity(new Intent(this, AlgorithmActivity.class));
+                break;
+            case R.id.button13:
+                startActivity(new Intent(this, RetrofitDemoActivity.class));
                 break;
 
         }
